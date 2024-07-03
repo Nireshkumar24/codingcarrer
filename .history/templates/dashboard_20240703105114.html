@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description"
+        content="Medical billing services for healthcare providers. Improve revenue cycle management with our professional billing solutions.">
+    <meta name="keywords"
+        content="medical billing, healthcare billing, revenue cycle management, medical billing company">
+    <meta name="author" content="infotekhealthcare">
+    <meta name="robots" content="index, follow"> <!-- To allow search engines to index the page -->
+    <meta name="googlebot" content="index, follow"> <!-- Google-specific indexing -->
+    <meta name="referrer" content="origin"> <!-- Control how referrer information is passed -->
+
+    <!-- Open Graph meta tags (for social media sharing) -->
+    <meta property="og:title" content="Medical Billing Company">
+    <meta property="og:description"
+        content="Medical billing services for healthcare providers. Improve revenue cycle management with our professional billing solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.infotekhealthcare.com/">
+    <meta property="og:image" content="https://www.example.com/images/medical_billing_logo.png">
+    <meta property="og:image:alt" content="Medical Billing Company Logo">
+    <meta property="og:site_name" content="Medical Billing Company">
+
+    <!-- Twitter Card meta tags (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Medical Billing Company">
+    <meta name="twitter:description"
+        content="Medical billing services for healthcare providers. Improve revenue cycle management with our professional billing solutions.">
+    <meta name="twitter:image" content="https://www.example.com/images/medical_billing_logo.png">
+    <meta name="twitter:image:alt" content="Medical Billing Company Logo">
+
+    <title>Infotek- Healthcare</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon"
+        href="{{ url_for('static', filename='images/Coding carrier.svg') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/bootstrap/css/bootstrap.min.css') }}">
+    <!-- Icon Font Css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/icofont/icofont.min.css') }}">
+    <!-- Slick Slider  CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/slick-carousel/slick/slick.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/slick-carousel/slick/slick-theme.css') }}">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+
+        .whatsapp-button i {
+            font-size: 24px;
+        }
+
+        @media screen and (min-width: 769px) {
+            .hide-on-desktop {
+                display: none;
+            }
+        }
+
+        /* Ensure it's visible on screens smaller than 768px */
+        @media screen and (max-width: 768px) {
+            .hide-on-desktop {
+                display: inline;
+                /* or use 'block' depending on your layout */
+            }
+        }
+
+        .ourcourse {
+            color: rgb(31, 29, 29);
+            border-radius: 6px;
+            border-color: rgb(97, 97, 138);
+            background-color: white;
+
+        }
+    </style>
+
+</head>
+
+<body id="top">
+
+    <header>
+        <div class="header-top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <ul class="top-bar-info list-inline-item pl-0 mb-0">
+                            <li class="list-inline-item"><a href="info@infotekhealthcare.com"><i
+                                        class="icofont-support-faq mr-2"></i>info@infotekhealthcare.com</a></li>
+                            <li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>
+                                Vellore,Tamilnadu </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
+                            <a href="tel:+ +91 93849 39396
+							">
+                                <span>Call Now : </span>
+                                <span class="h4"> +91 93849 39396
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navigation" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url_for('index') }}">
+                    <!-- <img src="images/Coding carrier.svg" alt="Logo" class="img-fluid" height="100px" width="100px"> -->
+                    <img src="{{ url_for('static', filename='images/Coding carrier.svg') }}" alt="Logo"
+                        class="img-fluid" height="100px" width="100px">
+
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain"
+                    aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icofont-navigation-menu"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarmain">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Courses <i class="icofont-thin-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                                <li><a class="dropdown-item" href="{{ url_for('certified_professional') }}">Certified
+                                        Professional Coder</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('CPC_Exam') }}">CPC Exam – New
+                                        Guidelines</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('Ed_Facility') }}">ED Facility</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('Ed_Professional') }}">ED
+                                        Professionals</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('Evaluation') }}">Evaluation and
+                                        Management </a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('Interventional') }}">Interventional
+                                        Radiology </a></li>
+
+
+
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <h1 class="text-left">Contact Messages Dashboard</h1>
+            <a href="/download_contact_messages" class=" btn btn-success text-right">Download</a>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for message in contact_messages %}
+                    <tr>
+                        <td>{{ message.id }}</td>
+                        <td>{{ message.name }}</td>
+                        <td>{{ message.email }}</td>
+                        <td>{{ message.mobile }}</td>
+                        <td>{{ message.message }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <footer class="footer section gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mr-auto col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <div class="logo mb-4">
+                            <img src="{{ url_for('static', filename='images/Coding carrier.svg') }}" alt=""
+                                class="img-fluid" height="100px" width="100px">
+                        </div>
+                        <p>Shaping the Future of Healthcare through Education and Innovation</p>
+
+                        <ul class="list-inline footer-socials mt-4">
+                            <li class="list-inline-item"><a href="#"><i class="icofont-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="icofont-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="icofont-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <h4 class="text-capitalize mb-3">Department</h4>
+                        <div class="divider mb-4"></div>
+
+                        <ul class="list-unstyled footer-menu lh-35">
+                            <li><a href="{{ url_for('Interventional') }}"> Radiology
+                                    department </a></li>
+                            <li><a href="{{ url_for('certified_professional') }}">Certified Coder</a></li>
+                            <li><a href="{{ url_for('CPC_Exam') }}">CPC Exam </a></li>
+                            <li><a href="{{ url_for('Evaluation') }}">Evaluation and Management Coding</a>
+                            </li>
+                            <li><a href="{{ url_for('Ed_Facility') }}">ED Facility</a></li>
+                            <li><a href="{{ url_for('Ed_Professional') }}">ED Professional</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="widget widget-contact mb-5 mb-lg-0">
+                        <h4 class="text-capitalize mb-3">Get in Touch</h4>
+                        <div class="divider mb-4"></div>
+
+                        <div class="footer-contact-block mb-4">
+                            <div class="icon d-flex align-items-center">
+                                <i class="icofont-email mr-3"></i>
+                                <span class="h6 mb-0">Support Available for 24/7</span>
+                            </div>
+                            <h4 class="mt-2"><a href="info@infotekhealthcare.com">info@infotekhealthcare.com</a>
+                            </h4>
+                        </div>
+
+                        <div class="footer-contact-block">
+                            <div class="icon d-flex align-items-center">
+                                <i class="icofont-support mr-3"></i>
+                                <span class="h6 mb-0">Mon to Fri : 08:30 - 18:00</span>
+                            </div>
+                            <h4 class="mt-2"><a href="tel:+91 93849 39396">+91 93849 39396</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-btm py-4 mt-5">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            &copy; Copyright Reserved by <span class="text-color"></span> by <a
+                                href="https://infotekhealthcare.com/" target="_blank">infotekhealthcare</a>
+                        </div>
+                    </div>
+
+    </footer>
+
+
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+
+    <!-- Main jQuery -->
+    <script src="{{ url_for('static', filename='plugins/jquery/jquery.js') }}"></script>
+    <!-- Bootstrap 4.3.2 -->
+    <script src="{{ url_for('static', filename='plugins/bootstrap/js/popper.js') }}"></script>
+    <script src="{{ url_for('static', filename='plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='plugins/counterup/jquery.easing.js') }}"></script>
+    <!-- Slick Slider -->
+    <script src="{{ url_for('static', filename='plugins/slick-carousel/slick/slick.min.js') }}"></script>
+    <!-- Counterup -->
+    <script src="{{ url_for('static', filename='plugins/counterup/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='plugins/shuffle/shuffle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='plugins/counterup/jquery.counterup.min.js') }}"></script>
+    <!-- Google Map -->
+    <script src="{{ url_for('static', filename='plugins/google-map/map.js') }}"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+
+</body>
+
+</html>
