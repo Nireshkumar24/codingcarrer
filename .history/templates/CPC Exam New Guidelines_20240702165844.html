@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description"
+        content="Medical billing services for healthcare providers. Improve revenue cycle management with our professional billing solutions.">
+    <meta name="keywords"
+        content="medical billing, healthcare billing, revenue cycle management, medical billing company">
+    <meta name="author" content="infotekhealthcare">
+    <meta name="robots" content="index, follow"> <!-- To allow search engines to index the page -->
+    <meta name="googlebot" content="index, follow"> <!-- Google-specific indexing -->
+    <meta name="referrer" content="origin"> <!-- Control how referrer information is passed -->
+
+    <!-- Open Graph meta tags (for social media sharing) -->
+    <meta property="og:title" content="Medical Billing Company">
+    <meta property="og:description"
+        content="Medical billing services for healthcare providers. Improve revenue cycle management with our professional billing solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.infotekhealthcare.com/">
+    <meta property="og:image" content="https://www.example.com/images/medical_billing_logo.png">
+    <meta property="og:image:alt" content="Medical Billing Company Logo">
+    <meta property="og:site_name" content="Medical Billing Company">
+
+    <!-- Twitter Card meta tags (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Medical Billing Company">
+    <meta name="twitter:description"
+        content="Medical billing services for healthcare providers. Improve revenue cycle management with our professional billing solutions.">
+    <meta name="twitter:image" content="https://www.example.com/images/medical_billing_logo.png">
+    <meta name="twitter:image:alt" content="Medical Billing Company Logo">
+
+    <title>
+        CPC Exam – New Guidelines</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon"
+        href="{{ url_for('static', filename='images/Coding carrier.svg') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/bootstrap/css/bootstrap.min.css') }}">
+    <!-- Icon Font Css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/icofont/icofont.min.css') }}">
+    <!-- Slick Slider  CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/slick-carousel/slick/slick.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/slick-carousel/slick/slick-theme.css') }}">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        p {
+            text-indent: 15px;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <header>
+        <div class="header-top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <ul class="top-bar-info list-inline-item pl-0 mb-0">
+                            <li class="list-inline-item"><a href="infotekhealth@gmail.com"><i
+                                        class="icofont-support-faq mr-2"></i>infotekhealth@gmail.com</a></li>
+                            <li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>
+                                Vellore,Tamilnadu </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
+                            <a href="tel:+ +91 93849 39396
+							">
+                                <span>Call Now : </span>
+                                <span class="h4"> +91 93849 39396
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navigation" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url_for('index') }}">
+                    <img src="{{ url_for('static', filename='images/Coding carrier.svg') }}" alt="" class="img-fluid"
+                        height="100px" width="100px"></a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain"
+                    aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icofont-navigation-menu"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarmain">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                        </li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="service.html">Services</a></li> -->
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Courses <i class="icofont-thin-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                                <li><a class="dropdown-item" href="{{ url_for('certified_professional') }}">Certified
+                                        Professional Coder</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('CPC_Exam') }}">CPC Exam – New
+                                        Guidelines</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('Ed_Facility') }}">ED Facility</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('Ed_Professional') }}">ED
+                                        Professionals</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('Evaluation') }}">Evaluation and
+                                        Management </a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('Interventional') }}">Interventional
+                                        Radiology </a></li>
+
+
+
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>CPC Exam – New Guidelines (From January 2022)</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="single-services">
+        <div class="container">
+            <section>
+                <article>
+                    <h4>The CPC Exam Breakdown</h4>
+                    <p class="mb-5"><b>According to AAPC Guidelines</b>, passing the CPC exam requires you to correctly
+                        answer a minimum of 70 questions from the series below. The exam questions, however, will not be
+                        identified or sorted by the series to which they pertain. The CPC test will rely on a level of
+                        understanding that enables you to identify the series.
+                    </p>
+
+                    <h4>10000 Series</h4>
+                    <p class="mb-5">Consists of <b>six questions</b> related to surgical procedures performed on the
+                        Integumentary system, which includes skin, subcutaneous, and accessory structures, as well as
+                        nails, pilonidal cysts, repairs, destruction, and breast.
+                    </p>
+
+                    <h4>20000 Series</h4>
+                    <p class="mb-5"><b>Six questions</b> in the 20000 Series will home in on surgical procedures
+                        performed on the musculoskeletal system from head to toe. Specifically, these areas include the
+                        head, neck, back and flank, spine, abdomen, shoulder, arm, hand and fingers, pelvis and hip,
+                        leg, foot and toes.
+                    </p>
+
+                    <h4>30000 Series</h4>
+                    <p class="mb-5"><b>Six questions</b> covering the 30000 Series focus on surgical procedures
+                        performed on the respiratory system, surgical procedures performed on the cardiovascular system,
+                        surgical procedures performed on the hemic and lymphatic systems, and surgical procedures
+                        performed on the mediastinum and diaphragm.
+                    </p>
+
+                    <h4>40000 Series</h4>
+                    <p class="mb-5">40000 Series will be tested with <b>six questions</b> targeting surgical procedures
+                        performed on the digestive system, which will focus on these areas: lips, mouth, palate and
+                        uvula, salivary gland and ducts, pharynx, adenoids, and tonsils, esophagus, stomach, intestines,
+                        appendix, rectum, anus, liver, biliary tract, pancreas, abdomen, peritoneum, and omentum.
+                    </p>
+
+                    <h4>50000 Series</h4>
+                    <p class="mb-5"><b>Six questions</b> pertaining to surgical procedures performed on the urinary
+                        system, surgical procedures performed on the male reproductive system, surgical procedures
+                        performed on the female reproductive system, including maternity and delivery, and surgical
+                        procedures performed on the endocrine system.
+                    </p>
+
+                    <h4>60000 Series</h4>
+                    <p class="mb-5"><b>Six questions</b> directed at the 60000 Series involve surgical procedures
+                        performed on the nervous system and will include codes pertaining to the skull, meninges, brain,
+                        spine, spinal cord, extracranial nerves, peripheral nerves, autonomic nervous system.
+                    </p>
+
+                    <h4>Evaluation and Management</h4>
+                    <p class="mb-5"><b>You will be able to test your coding proficiency on <b>six E/M questions</b>
+                            concerning location and service level, including office/other outpatient, hospital
+                            observation,
+                            hospital inpatient, consultations, emergency department, critical care, nursing facility,
+                            domiciliary and rest homes, and home services. Preventive medicine, non-face-to-face
+                            services,
+                            neonatal and paediatric critical care, intensive care, prolonged services, chronic care,
+                            transitional care, case management, and care plan oversight will also be covered in the
+                            questions.
+
+                    </p>
+
+                    <h4>Anesthesia</h4>
+                    <p class="mb-5"><b>Four questions</b> related to anesthesia will pertain to time reporting,
+                        qualifying circumstances, physical status modifiers, anesthesia for surgical, diagnostic and
+                        obstetric services.
+                    </p>
+
+                    <h4>Radiology</h4>
+                    <p class="mb-5"><b>Six questions</b> in this section of the CPC test will focus on both diagnostic
+                        and interventional radiology, including diagnostic ultrasound, radiologic guidance, mammography,
+                        bone and joint studies, radiation oncology, and nuclear medicine.
+                    </p>
+
+                    <h4>Laboratory / Pathology</h4>
+                    <p class="mb-5">Your knowledge of organ and disease panels, drug testing, therapeutic drug assays,
+                        evocation/suppression testing, consultations, molecular pathology, MAAA, chemistry, haematology
+                        and coagulation, immunology, transfusions, microbiology, anatomic pathology, cytopathology,
+                        cytogenetic studies, surgical pathology, in vivo, and reproductive pathology will be assessed
+                        through six path/lab questions.
+
+                    </p>
+
+                    <h4>Medicine</h4>
+                    <p class="mb-5"><b>Six questions</b> will cover numerous specialty-specific coding scenarios, as
+                        well as immunizations,biofeedback,dialysis, central nervous system assessments, health and
+                        behavior assessments, hydration, medical nutrition, therapeutic and diagnostic administration,
+                        chemotherapy administration,photodynamic therapy, osteopathic manipulative treatment, patient
+                        education and training, non-face-to-face nonphysician services, and moderate sedation.
+                    </p>
+
+                    <h4>Medical Terminology</h4>
+                    <p class="mb-5">Medical terminology for all systems in the human body will be assessed in <b>four
+                            questions</b>.
+                    </p>
+
+                    <h4>Anatomy</h4>
+                    <p class="mb-5">Anatomy for all systems in the human body will be assessed in <b>four questions</b>.
+                    </p>
+
+                    <h4>ICD-10-CM/Diagnosis</h4>
+                    <p class="mb-5"><b>Five questions</b> will require proficiency in diagnosis for all the chapters
+                        included in ICD-10-CM, as well as thorough knowledge of the ICD-10-CM Official Guidelines for
+                        Coding and Reporting. Additionally,diagnosis questions will appear in other sections of the exam
+                        from the categories.
+                    </p>
+
+                    <h4>HCPCS Level II</h4>
+                    <p class="mb-5"><b>Three questions</b> on the CPC exam will pertain to HCPCS Level II coding and
+                        include questions focusing on modifiers, supplies, medications, and professional services for
+                        Medicare patients.
+                    </p>
+
+                    <h4>Coding Guidelines</h4>
+                    <p class="mb-5"><b>Seven questions</b> addressing the ICD-10-CM Official Guidelines for Coding and
+                        Reporting, coding guidelines and parenthetical notes, and modifier use.
+                    </p>
+
+                    <h4>Compliance and Regulatory</h4>
+                    <p class="mb-5"><b>Three questions</b> testing your knowledge of compliance and regulations will
+                        pertain to services covered under Medicare Parts A, B, C and D; applying coding to payment
+                        policy, place of service reporting, fraud and abuse, NCCI edits, NCD/LCD, HIPAA, ABNs, and RVUs.
+                    </p>
+
+                    <h4>(Note: New Section) Case Studies</h4>
+                    <p class="mb-5">You will be evaluated on your ability to accurately code medical records and
+                        documentation using ICD-10-CM and HCPCS Level II in ten different scenarios. These instances
+                        will include ten thousand, twenty thousand, thirty thousand, forty thousand, fifty thousand, six
+                        thousand series, medicine, anaesthesia, radiology, pathology, and laboratory services in
+                        addition to evaluation and management services. Information about anatomy, medical terminology,
+                        compliance, and laws may also be evaluated in the cases.
+
+
+                    </p>
+                </article>
+            </section>
+        </div>
+    </div>
+    <footer class="footer section gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mr-auto col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <div class="logo mb-4">
+                            <img src="{{ url_for('static', filename='images/Coding carrier.svg') }}" alt=""
+                                class="img-fluid" height="100px" width="100px">
+                        </div>
+                        <p>Shaping the Future of Healthcare through Education and Innovation</p>
+
+                        <ul class="list-inline footer-socials mt-4">
+                            <li class="list-inline-item"><a href="#"><i class="icofont-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="icofont-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="icofont-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="widget mb-5 mb-lg-0">
+                        <h4 class="text-capitalize mb-3">Department</h4>
+                        <div class="divider mb-4"></div>
+
+                        <ul class="list-unstyled footer-menu lh-35">
+                            <li><a href="{{ url_for('Interventional') }}"> Radiology
+                                    department </a></li>
+                            <li><a href="{{ url_for('certified_professional') }}">Certified Coder</a></li>
+                            <li><a href="{{ url_for('CPC_Exam') }}">CPC Exam </a></li>
+                            <li><a href="{{ url_for('Evaluation') }}">Evaluation and Management Coding</a>
+                            </li>
+                            <li><a href="{{ url_for('Ed_Facility') }}">ED Facility</a></li>
+                            <li><a href="{{ url_for('Ed_Professional') }}">ED Professional</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="widget widget-contact mb-5 mb-lg-0">
+                        <h4 class="text-capitalize mb-3">Get in Touch</h4>
+                        <div class="divider mb-4"></div>
+
+                        <div class="footer-contact-block mb-4">
+                            <div class="icon d-flex align-items-center">
+                                <i class="icofont-email mr-3"></i>
+                                <span class="h6 mb-0">Support Available for 24/7</span>
+                            </div>
+                            <h4 class="mt-2"><a href="info@infotekhealthcare.com">info@infotekhealthcare.com</a></h4>
+                        </div>
+
+                        <div class="footer-contact-block">
+                            <div class="icon d-flex align-items-center">
+                                <i class="icofont-support mr-3"></i>
+                                <span class="h6 mb-0">Mon to Fri : 08:30 - 18:00</span>
+                            </div>
+                            <h4 class="mt-2"><a href="tel:+91 93849 39396">+91 93849 39396</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-btm py-4 mt-5">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="copyright">
+                            &copy; Copyright Reserved by <span class="text-color"></span> <a
+                                href="https://infotekhealthcare.com/" target="_blank">infotekhealthcare</a>
+                        </div>
+                    </div>
+
+    </footer>
+
+
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+
+    <!-- Main jQuery -->
+    <script src="{{ url_for('static', filename='plugins/jquery/jquery.js') }}"></script>
+    <!-- Bootstrap 4.3.2 -->
+    <script src="{{ url_for('static', filename='plugins/bootstrap/js/popper.js') }}"></script>
+    <script src="{{ url_for('static', filename='plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='plugins/counterup/jquery.easing.js') }}"></script>
+    <!-- Slick Slider -->
+    <script src="{{ url_for('static', filename='plugins/slick-carousel/slick/slick.min.js') }}"></script>
+    <!-- Counterup -->
+    <script src="{{ url_for('static', filename='plugins/counterup/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='plugins/shuffle/shuffle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='plugins/counterup/jquery.counterup.min.js') }}"></script>
+    <!-- Google Map -->
+    <script src="{{ url_for('static', filename='plugins/google-map/map.js') }}"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+
+</body>
+
+</html>
