@@ -103,16 +103,16 @@ def download_contact_messages():
     contact_messages = ContactMessage.query.all()
     buffer = io.StringIO()
     writer = csv.writer(buffer)
-    writer.writerow(['ID', 'Name', 'Email','Mobile', 'Message']) 
+    writer.writerow(['ID', 'Name', 'Email','Mobile', 'Message'])  # Adjust headers based on your model fields
     for message in contact_messages:
-        writer.writerow([message.id, message.name, message.email, message.mobile, message.message])  
+        writer.writerow([message.id, message.name, message.email, message.mobile, message.message])  # Adjust based on your model fields
         buffer.seek(0)
         response = Response(buffer, mimetype='text/csv')
     response.headers['Content-Disposition'] = 'attachment; filename=contact_messages.csv'
     
     return response
 
-#delete route
+
 # @app.route('/delete_contact_message/<int:id>', methods=['POST'])
 # def delete_contact_message(id):
 #     contact_message = ContactMessage.query.get_or_404(id)
@@ -123,6 +123,7 @@ def download_contact_messages():
 
 
 # this is pdf converter
+
 # @app.route('/download_contact_messages')
 # def download_contact_messages():
 #     contact_messages = ContactMessage.query.all()
